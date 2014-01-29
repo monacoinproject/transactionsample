@@ -1,36 +1,35 @@
-“ü‹àƒAƒhƒŒƒX•\Ž¦•Šm”FƒTƒ“ƒvƒ‹
+å…¥é‡‘ã‚¢ãƒ‰ãƒ¬ã‚¹è¡¨ç¤ºï¼†ç¢ºèªã‚µãƒ³ãƒ—ãƒ«
 ================================
 
 http://www.monacoin.com
 
 Copyright (c) 2014      Monacoin Developers
 
-‚È‚É‚±‚êH
+ãªã«ã“ã‚Œï¼Ÿ
 ----------------
 
-Monacoin ‚Å•¨‚ð”Ì”„‚·‚é‚Æ‚«‚È‚Ç‚ÉA‚¨‹q‚³‚ñ–ˆ‚É“ü‹àæƒAƒhƒŒƒX‚ðì‚Á‚Ä‚ ‚°‚Ä“ü‹à‚ðŠm”F‚·‚éŽè’i‚ð
-‰Â”\‚ÈŒÀ‚èƒVƒ“ƒvƒ‹‚ÉŽÀ‘•‚µ‚½ƒTƒ“ƒvƒ‹‚Å‚·B
+Monacoin ã§ç‰©ã‚’è²©å£²ã™ã‚‹ã¨ããªã©ã«ã€ãŠå®¢ã•ã‚“æ¯Žã«å…¥é‡‘å…ˆã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’ä½œã£ã¦ã‚ã’ã¦å…¥é‡‘ã‚’ç¢ºèªã™ã‚‹æ‰‹æ®µã‚’ã€å¯èƒ½ãªé™ã‚Šã‚·ãƒ³ãƒ—ãƒ«ã«å®Ÿè£…ã—ãŸã‚µãƒ³ãƒ—ãƒ«ã§ã™ã€‚
 
 
-ƒ‰ƒCƒZƒ“ƒX
+ãƒ©ã‚¤ã‚»ãƒ³ã‚¹
 -------
 
-Œ —˜‚ðŽå’£‚·‚é‚Ù‚Ç‚Ì“à—e‚ª–³‚¢B
-ƒpƒuƒŠƒbƒNƒhƒƒCƒ“B
+æ¨©åˆ©ã‚’ä¸»å¼µã™ã‚‹ã»ã©ã®å†…å®¹ãŒç„¡ã„ã€‚  
+ãƒ‘ãƒ–ãƒªãƒƒã‚¯ãƒ‰ãƒ¡ã‚¤ãƒ³ã€‚
 
 
-ŽÀs•û–@
+å®Ÿè¡Œæ–¹æ³•
 -------------------
 
-‚PDPHP‚Ì“®ì‚·‚éwebƒT[ƒo[‚ðŒš‚Ä‚Ü‚·B
-‚QDƒTƒ“ƒvƒ‹‚Ìmonacoin.conf‚É‘‚©‚ê‚½“à—e‚ÅAMonacoin-qt‚©monacoind‚ðŽÀs‚µ‚Ü‚·B
-‚RDsample.php‚Ì
-@@$host = 'localhost';		/* monacoind –”‚Í monacoin-qt ‚ðŽÀs’†‚ÌƒzƒXƒg‚ÌƒAƒhƒŒƒX */
-@@‚ðŠeŽ©‚ÌŽÀsŠÂ‹«‚É‡‚í‚¹‚Ä•ÏX‚µ‚Ä‚­‚¾‚³‚¢B
-‚SDƒuƒ‰ƒEƒU‚©‚çindex.html‚ÉƒAƒNƒZƒX‚µ‚Ä‚­‚¾‚³‚¢B
-‚TD”CˆÓ‚Ìƒ†[ƒU[–¼‚ð“ü‚ê‚ÄA‚»‚Ìƒ†[ƒU[‚Ì“ü‹àƒAƒhƒŒƒX‚ðŽæ“¾‚µ‚½‚èA“ü‹à—š—ð‚ðŠm”F‚Å‚«‚Ü‚·B
+ï¼‘ï¼ŽPHPã®å‹•ä½œã™ã‚‹webã‚µãƒ¼ãƒãƒ¼ã‚’å»ºã¦ã¾ã™ã€‚  
+ï¼’ï¼Žã‚µãƒ³ãƒ—ãƒ«ã®monacoin.confã«æ›¸ã‹ã‚ŒãŸå†…å®¹ã§ã€Monacoin-qtã‹monacoindã‚’å®Ÿè¡Œã—ã¾ã™ã€‚  
+ï¼“ï¼Žsample.phpã®  
+ã€€ã€€$host = 'localhost';
+ã€€ã€€ã‚’å„è‡ªã®å®Ÿè¡Œç’°å¢ƒã«åˆã‚ã›ã¦å¤‰æ›´ã—ã¦ãã ã•ã„ã€‚  
+ï¼”ï¼Žãƒ–ãƒ©ã‚¦ã‚¶ã‹ã‚‰index.htmlã«ã‚¢ã‚¯ã‚»ã‚¹ã—ã¦ãã ã•ã„ã€‚  
+ï¼•ï¼Žä»»æ„ã®ãƒ¦ãƒ¼ã‚¶ãƒ¼åã‚’å…¥ã‚Œã¦ã€ãã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ã®å…¥é‡‘ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’å–å¾—ã—ãŸã‚Šã€å…¥é‡‘å±¥æ­´ã‚’ç¢ºèªã§ãã¾ã™ã€‚  
 
 
-Windowsã‚ÅMonacoin-qt.exe‚ÆXAMPP‚Å“®ìŠm”F‚µ‚Ü‚µ‚½B
-Windows‚©‚çgit‚ÉƒRƒ~ƒbƒg‚µ‚½‚Ì‚ÅAƒp[ƒ~ƒbƒVƒ‡ƒ“‚Æ‚©‚Í‚¨Ž@‚µB
-‹}‚²‚µ‚ç‚¦‚È‚Ì‚Å‚¨‚©‚µ‚¢‚Æ‚±‚ë‚ª‚ ‚Á‚½‚ç‹³‚¦‚Ä‚­‚¾‚³‚¢B
+Windowsä¸Šã§Monacoin-qt.exeã¨XAMPPã§å‹•ä½œç¢ºèªã—ã¾ã—ãŸã€‚  
+Windowsã‹ã‚‰gitã«ã‚³ãƒŸãƒƒãƒˆã—ãŸã®ã§ã€ãƒ‘ãƒ¼ãƒŸãƒƒã‚·ãƒ§ãƒ³ã¨ã‹ã¯ãŠå¯Ÿã—ã€‚  
+æ€¥ã”ã—ã‚‰ãˆãªã®ã§ãŠã‹ã—ã„ã¨ã“ã‚ãŒã‚ã£ãŸã‚‰æ•™ãˆã¦ãã ã•ã„ã€‚  
