@@ -39,16 +39,16 @@ if(isset($_GET['param']) && isset($_GET['username'])) {
 			   最新のものから$historyNum分だけ取得。
 			   第三引数は最新のトランザクションからのオフセットです。（省略可）*/
 			$transactions = $coind->listtransactions($addrlabel, $historyNum, 0);
+
+			echo $_GET['username']."さんの入金履歴<br />";
+			foreach($transactions as $transaction) {
+				/* 取得したトランザクションから入金のものだけ抽出 */
+				if($transaction['category']=="receive") {
+					echo date('Y/m/d H:m:s',$transaction['time']).'：　'.$transaction['amount'].' MONA<br />';
+				}
+			}
 		} catch (Exception $e) {
 			echo 'エラー<br />';
-		}
-
-		echo $_GET['username']."さんの入金履歴<br />";
-		foreach($transactions as $transaction) {
-			/* 取得したトランザクションから入金のものだけ抽出 */
-			if($transaction['category']=="receive") {
-				echo date('Y/m/d H:m:s',$transaction['time']).'：　'.$transaction['amount'].' MONA<br />';
-			}
 		}
 	}
 }
