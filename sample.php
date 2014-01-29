@@ -37,7 +37,7 @@ if(isset($_GET['param']) && isset($_GET['username'])) {
 		try{
 			/* 指定のラベル（このサンプルではユーザー名＝ラベル）のトランザクションを
 			   最新のものから$historyNum分だけ取得。
-			   第三引数の最新のトランザクションからのオフセットです。（省略可）*/
+			   第三引数は最新のトランザクションからのオフセットです。（省略可）*/
 			$transactions = $coind->listtransactions($addrlabel, $historyNum, 0);
 		} catch (Exception $e) {
 			echo 'エラー<br />';
