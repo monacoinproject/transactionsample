@@ -35,3 +35,4 @@ jsonRPCClient.phpのみGPLとなっております。
 Windows上でMonacoin-qt.exeとXAMPPで動作確認しました。  
 Windowsからgitにコミットしたので、パーミッションとかはお察し。  
 急ごしらえなのでおかしいところがあったら教えてください。  
+リクエストはGETじゃなくてPOSTにすべきです。
