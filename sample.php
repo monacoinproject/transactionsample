@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ja">
+<html lang="en">
 <head>
 <meta charset="utf-8"/>
 </head>
@@ -11,8 +11,8 @@ require_once(__DIR__ . '/jsonRPCClient.php');
 
 $host = 'localhost';		/* monacoind 又は monacoin-qt を実行中のホストのアドレス */
 $rpcuser = 'monacoinuser';	/* monacoin.conf で指定した rpcユーザー名 */
-$rpcpassword = 'pass';		/* monacoin.conf で指定した rpcパスワード */
-$rpcport = '12345';			/* monacoin.conf で指定した rpcポート */
+$rpcpassword = 'x';		/* monacoin.conf で指定した rpcパスワード */
+$rpcport = '22222';			/* monacoin.conf で指定した rpcポート */
 $historyNum = 50;			/* 取得するトランザクション数 */
 
 
@@ -37,19 +37,25 @@ if(isset($_GET['param']) && isset($_GET['username'])) {
 		try{
 			/* 指定のラベル（このサンプルではユーザー名＝ラベル）のトランザクションを
 			   最新のものから$historyNum分だけ取得。
-			   第三引数は最新のトランザクションからのオフセットです。（省略可）*/
+			   第三引数の最新のトランザクションからのオフセットです。（省略可）*/
 			$transactions = $coind->listtransactions($addrlabel, $historyNum, 0);
 
 			echo $_GET['username']."さんの入金履歴<br />";
 			foreach($transactions as $transaction) {
 				/* 取得したトランザクションから入金のものだけ抽出 */
 				if($transaction['category']=="receive") {
-					echo date('Y/m/d H:m:s',$transaction['time']).'：　'.$transaction['amount'].' MONA<br />';
+					echo date('Y/m/d H:m:s',$transaction['time']).'：　'.$transaction['amount'].' MONA　';
+					/* 2014/02/03 追加
+					   一定期間経過したものだけを入金扱いとする
+					   このサンプルではトランザクション発生から 6 block経過したものを承認済みとする */
+					echo ($transaction['confirmations'] < 6)?'[承認待ち]':'[承認済み]';
 				}
 			}
+
 		} catch (Exception $e) {
 			echo 'エラー<br />';
 		}
+
 	}
 }
 ?>
