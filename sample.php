@@ -11,8 +11,8 @@ require_once(__DIR__ . '/jsonRPCClient.php');
 
 $host = 'localhost';		/* monacoind 又は monacoin-qt を実行中のホストのアドレス */
 $rpcuser = 'monacoinuser';	/* monacoin.conf で指定した rpcユーザー名 */
-$rpcpassword = 'x';		/* monacoin.conf で指定した rpcパスワード */
-$rpcport = '22222';			/* monacoin.conf で指定した rpcポート */
+$rpcpassword = 'pass';		/* monacoin.conf で指定した rpcパスワード */
+$rpcport = '12345';			/* monacoin.conf で指定した rpcポート */
 $historyNum = 50;			/* 取得するトランザクション数 */
 
 
