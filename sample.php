@@ -44,7 +44,7 @@ if(isset($_GET['param']) && isset($_GET['username'])) {
 			foreach($transactions as $transaction) {
 				/* 取得したトランザクションから入金のものだけ抽出 */
 				if($transaction['category']=="receive") {
-					echo date('Y/m/d H:m:s',$transaction['time']).'：　'.$transaction['amount'].' MONA　';
+					echo date('Y/m/d H:i:s',$transaction['time']).'：　'.$transaction['amount'].' MONA　';
 					/* 2014/02/03 追加
 					   一定期間経過したものだけを入金扱いとする
 					   このサンプルではトランザクション発生から 6 block経過したものを承認済みとする */
